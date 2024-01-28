@@ -1,0 +1,38 @@
+<!-- Write a JavaScript program to find max of 4 number using nested if. -->
+<script type="text/javascript">
+     var a = parseInt(prompt("enter 1st no :-"));
+     var b = parseInt(prompt("enter 2st no :-"));
+     var c = parseInt(prompt("enter 3st no :-"));
+     var d = parseInt(prompt("enter 4st no :-"));
+
+     document.write(`number => ${a} ,${b} ,${c} ,${d}`)
+     if(a>b){
+          if(a>c){
+               if(a>d){
+                    document.write(`<h2>1st no is max</h2>`);
+               }else{
+                    document.write(`<h2>4th no is max</h2>`);
+               }
+          }else{
+               if(c>d){
+                    document.write(`<h2>3rd no is max</h2>`);
+               }else{
+                    document.write(`<h2>4th no is max</h2>`);
+               }
+          }
+     }else{
+          if(b>c){
+               if(b>d){
+                    document.write(`<h2>2nd no is max</h2>`);
+               }else{
+                    document.write(`<h2>4th no is max</h2>`);
+               }
+          }else{
+               if(c>d){
+                    document.write(`<h2>3rd no is max</h2>`);
+               }else{
+                    document.write(`<h2>4th no is max</h2>`);
+               }
+          }
+     }
+</script>
